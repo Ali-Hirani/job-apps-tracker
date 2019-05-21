@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:jobApp="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/job_card"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    jobApp:cardCornerRadius="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/job_title_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                jobApp:layout_constraintStart_toStartOf="parent"
+                jobApp:layout_constraintTop_toTopOf="parent"
+                tools:text="Software Engineer" />
+
+            <TextView
+                android:id="@+id/company_name_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                jobApp:layout_constraintStart_toStartOf="parent"
+                jobApp:layout_constraintTop_toBottomOf="@id/job_title_label"
+                tools:text="Google" />
+
+            <TextView
+                android:id="@+id/location_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                jobApp:layout_constraintStart_toStartOf="parent"
+                jobApp:layout_constraintTop_toBottomOf="@id/company_name_label"
+                tools:text="Mountain View" />
+
+            <TextView
+                android:id="@+id/job_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                jobApp:layout_constraintBottom_toBottomOf="parent"
+                jobApp:layout_constraintEnd_toEndOf="parent"
+                jobApp:layout_constraintTop_toTopOf="parent"
+                tools:text="Applied" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/status_color_bar"
+            android:layout_width="12dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/black" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

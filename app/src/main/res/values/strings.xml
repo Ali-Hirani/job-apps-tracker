@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Job Apps Tracker</string>
+    <string-array name="app_status_array">
+        <item>Seen</item>
+        <item>Applied</item>
+        <item>Interview</item>
+        <item>Offer</item>
+        <item>Rejected</item>
+    </string-array>
+</resources>
